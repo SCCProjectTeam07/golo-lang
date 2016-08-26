@@ -1,0 +1,121 @@
+Started by user Wan Choon Yean
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\TestBuild
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/SCCProjectTeam07/golo-lang.git # timeout=10
+Fetching upstream changes from https://github.com/SCCProjectTeam07/golo-lang.git
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files\Git\bin\git.exe -c core.askpass=true fetch --tags --progress https://github.com/SCCProjectTeam07/golo-lang.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision da858b5af29ade62c186ddcb317d5fa722dfa26c (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f da858b5af29ade62c186ddcb317d5fa722dfa26c
+ > C:\Program Files\Git\bin\git.exe rev-list da858b5af29ade62c186ddcb317d5fa722dfa26c # timeout=10
+[Gradle] - Launching build.
+[TestBuild] $ cmd.exe /C '""C:\Program Files (x86)\Jenkins\workspace\TestBuild\gradlew.bat"' tasks && exit %%ERRORLEVEL%%"
+
+:tasks
+
+------------------------------------------------------------
+All tasks runnable from root project
+------------------------------------------------------------
+
+Application tasks
+-----------------
+installApp - Installs the project as a JVM application along with libs and OS specific scripts.
+run - Runs this project as a JVM application
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildMavenPlugin - Builds the Golo Maven plugin.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+classes - Assembles main classes.
+clean - Deletes the build directory.
+goloc - Compiles Golo source files.
+jar - Assembles a jar archive containing the main classes.
+testClasses - Assembles test classes.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build. [incubating]
+
+Distribution tasks
+------------------
+assembleDist - Assembles the main distributions
+distTar - Bundles the project as a distribution.
+distZip - Bundles the project as a distribution.
+installDist - Installs the project as a distribution as-is.
+
+Documentation tasks
+-------------------
+asciidoctor - Converts AsciiDoc files and copies the output files and related resources to the build directory.
+doc - Generates all the documentations.
+golodoc - Generates documentation of the standard Golo modules.
+javadoc - Generates Javadoc API documentation for the main source code.
+
+Help tasks
+----------
+buildEnvironment - Displays all buildscript dependencies declared in root project 'golo'.
+components - Displays the components produced by root project 'golo'. [incubating]
+dependencies - Displays all dependencies declared in root project 'golo'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'golo'.
+dependencyUpdates - Displays the dependency updates for the project.
+help - Displays a help message.
+model - Displays the configuration model of root project 'golo'. [incubating]
+projects - Displays the sub-projects of root project 'golo'.
+properties - Displays the properties of root project 'golo'.
+tasks - Displays the tasks runnable from root project 'golo'.
+
+JavaCC tasks
+------------
+compileJavacc - Compiles JavaCC files into Java files
+compileJjtree - Compiles JJTree files into JavaCC files
+jjdoc - Takes a JavaCC parser specification and produces documentation for the BNF grammar
+
+Publishing tasks
+----------------
+bintrayUpload - Publishes artifacts to bintray.com.
+deployMavenPlugin - Deploys the Golo Maven plugin.
+deployMavenPluginToBintray - Deploys the Golo Maven plugin to Bintray.
+generatePomFileForGoloPublication - Generates the Maven POM file for publication 'golo'.
+publish - Publishes all publications produced by this project.
+publishGoloPublicationToMavenLocal - Publishes Maven publication 'golo' to the local Maven repository.
+publishGoloPublicationToProjectRepository - Publishes Maven publication 'golo' to Maven repository 'project'.
+publishToMavenLocal - Publishes all Maven publications produced by this project to the local Maven cache.
+
+Verification tasks
+------------------
+check - Runs all checks.
+test - Runs the unit tests.
+
+Versioning tasks
+----------------
+versionDisplay - Writes version information on the standard output.
+versionFile - Writes version information into a file.
+
+Other tasks
+-----------
+findbugsTest - Run FindBugs analysis for test classes
+jacocoTestReport
+wrapper - Generates the Gradle wrapper scripts.
+
+Rules
+-----
+Pattern: clean<TaskName>: Cleans the output files of a task.
+Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
+Pattern: upload<ConfigurationName>: Assembles and uploads the artifacts belonging to a configuration.
+
+To see all tasks and more detail, run gradlew tasks --all
+
+To see more detail about a task, run gradlew help --task <task>
+
+BUILD SUCCESSFUL
+
+Total time: 15.73 secs
+
+Build step 'Invoke Gradle script' changed build result to SUCCESS
+Finished: SUCCESS
