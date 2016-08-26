@@ -1,0 +1,213 @@
+Started by user Wan Choon Yean
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\TestBuild
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/SCCProjectTeam07/golo-lang.git # timeout=10
+Fetching upstream changes from https://github.com/SCCProjectTeam07/golo-lang.git
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files\Git\bin\git.exe -c core.askpass=true fetch --tags --progress https://github.com/SCCProjectTeam07/golo-lang.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision da858b5af29ade62c186ddcb317d5fa722dfa26c (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f da858b5af29ade62c186ddcb317d5fa722dfa26c
+ > C:\Program Files\Git\bin\git.exe rev-list da858b5af29ade62c186ddcb317d5fa722dfa26c # timeout=10
+[Gradle] - Launching build.
+[TestBuild] $ cmd.exe /C '""C:\Program Files (x86)\Jenkins\workspace\TestBuild\gradlew.bat"' build && exit %%ERRORLEVEL%%"
+:asciidoctor
+Download https://jcenter.bintray.com/org/asciidoctor/asciidoctorj/1.5.4/asciidoctorj-1.5.4.pom
+Download https://jcenter.bintray.com/org/asciidoctor/asciidoctorj-groovy-dsl/1.0.0.preview2/asciidoctorj-groovy-dsl-1.0.0.preview2.pom
+Download https://jcenter.bintray.com/org/jruby/jruby-complete/1.7.21/jruby-complete-1.7.21.pom
+Download https://jcenter.bintray.com/org/jruby/jruby-artifacts/1.7.21/jruby-artifacts-1.7.21.pom
+Download https://jcenter.bintray.com/org/jruby/jruby-parent/1.7.21/jruby-parent-1.7.21.pom
+Download https://jcenter.bintray.com/com/beust/jcommander/1.35/jcommander-1.35.pom
+Download https://jcenter.bintray.com/org/sonatype/oss/oss-parent/3/oss-parent-3.pom
+Download https://jcenter.bintray.com/org/codehaus/groovy/groovy-all/1.8.9/groovy-all-1.8.9.pom
+Download https://jcenter.bintray.com/org/asciidoctor/asciidoctorj/1.5.4/asciidoctorj-1.5.4.jar
+Download https://jcenter.bintray.com/org/asciidoctor/asciidoctorj-groovy-dsl/1.0.0.preview2/asciidoctorj-groovy-dsl-1.0.0.preview2.jar
+Download https://jcenter.bintray.com/org/jruby/jruby-complete/1.7.21/jruby-complete-1.7.21.jar
+Download https://jcenter.bintray.com/com/beust/jcommander/1.35/jcommander-1.35.jar
+Download https://jcenter.bintray.com/org/codehaus/groovy/groovy-all/1.8.9/groovy-all-1.8.9.jar
+io/console not supported; tty will not be manipulated
+:assembleAsciidoc
+:compileJjtree
+Java Compiler Compiler Version 6.1_2 (Tree Builder)
+(type "jjtree" with no arguments for help)
+Reading from file C:\Program Files (x86)\Jenkins\workspace\TestBuild\src\main\jjtree\org\eclipse\golo\compiler\parser\Golo.jjt . . .
+Warning: Output directory "C:\Program Files (x86)\Jenkins\workspace\TestBuild\build\generated\jjtree\tmp\org\eclipse\golo\compiler\parser" does not exist. Creating the directory.
+opt:java
+File "Node.java" does not exist.  Will create one.
+File "SimpleNode.java" does not exist.  Will create one.
+File "ASTerror.java" does not exist.  Will create one.
+File "ASTCompilationUnit.java" does not exist.  Will create one.
+File "ASTModuleDeclaration.java" does not exist.  Will create one.
+File "ASTImportDeclaration.java" does not exist.  Will create one.
+File "ASTToplevelDeclaration.java" does not exist.  Will create one.
+File "ASTStructDeclaration.java" does not exist.  Will create one.
+File "ASTUnionValue.java" does not exist.  Will create one.
+File "ASTUnionDeclaration.java" does not exist.  Will create one.
+File "ASTNamedAugmentationDeclaration.java" does not exist.  Will create one.
+File "ASTAugmentDeclaration.java" does not exist.  Will create one.
+File "ASTFunctionDeclaration.java" does not exist.  Will create one.
+File "ASTDecoratorDeclaration.java" does not exist.  Will create one.
+File "ASTContinue.java" does not exist.  Will create one.
+File "ASTBreak.java" does not exist.  Will create one.
+File "ASTThrow.java" does not exist.  Will create one.
+File "ASTWhileLoop.java" does not exist.  Will create one.
+File "ASTForLoop.java" does not exist.  Will create one.
+File "ASTForEachLoop.java" does not exist.  Will create one.
+File "ASTTryCatchFinally.java" does not exist.  Will create one.
+File "ASTExpressionStatement.java" does not exist.  Will create one.
+File "ASTUnaryExpression.java" does not exist.  Will create one.
+File "ASTInvocationExpression.java" does not exist.  Will create one.
+File "ASTMultiplicativeExpression.java" does not exist.  Will create one.
+File "ASTAdditiveExpression.java" does not exist.  Will create one.
+File "ASTRelationalExpression.java" does not exist.  Will create one.
+File "ASTEqualityExpression.java" does not exist.  Will create one.
+File "ASTAndExpression.java" does not exist.  Will create one.
+File "ASTOrExpression.java" does not exist.  Will create one.
+File "ASTOrIfNullExpression.java" does not exist.  Will create one.
+File "ASTMethodInvocation.java" does not exist.  Will create one.
+File "ASTBlock.java" does not exist.  Will create one.
+File "ASTFunction.java" does not exist.  Will create one.
+File "ASTLiteral.java" does not exist.  Will create one.
+File "ASTCollectionLiteral.java" does not exist.  Will create one.
+File "ASTReference.java" does not exist.  Will create one.
+File "ASTDestructuringAssignment.java" does not exist.  Will create one.
+File "ASTLetOrVar.java" does not exist.  Will create one.
+File "ASTAssignment.java" does not exist.  Will create one.
+File "ASTReturn.java" does not exist.  Will create one.
+File "ASTArgument.java" does not exist.  Will create one.
+File "ASTAnonymousFunctionInvocation.java" does not exist.  Will create one.
+File "ASTFunctionInvocation.java" does not exist.  Will create one.
+File "ASTConditionalBranching.java" does not exist.  Will create one.
+File "ASTCase.java" does not exist.  Will create one.
+File "ASTMatch.java" does not exist.  Will create one.
+File "GoloParserTreeConstants.java" does not exist.  Will create one.
+File "GoloParserVisitor.java" does not exist.  Will create one.
+File "GoloParserDefaultVisitor.java" does not exist.  Will create one.
+File "JJTGoloParserState.java" does not exist.  Will create one.
+Annotated grammar generated successfully in C:\Program Files (x86)\Jenkins\workspace\TestBuild\build\generated\jjtree\tmp\org\eclipse\golo\compiler\parser\Golo.jj
+:compileJavacc
+Java Compiler Compiler Version 6.1_2 (Parser Generator)
+(type "javacc" with no arguments for help)
+Reading from file C:\Program Files (x86)\Jenkins\workspace\TestBuild\build\generated\jjtree\org\eclipse\golo\compiler\parser\Golo.jj . . .
+Warning: Output directory "C:\Program Files (x86)\Jenkins\workspace\TestBuild\build\generated\javacc\tmp\org\eclipse\golo\compiler\parser" does not exist. Creating the directory.
+Note: UNICODE_INPUT option is specified. Please make sure you create the parser/lexer using a Reader with the correct character encoding.
+File "TokenMgrError.java" does not exist.  Will create one.
+File "ParseException.java" does not exist.  Will create one.
+File "Token.java" does not exist.  Will create one.
+File "JavaCharStream.java" does not exist.  Will create one.
+Parser generated with 0 errors and 1 warnings.
+:compileJava
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.1/asm-5.1.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-parent/5.1/asm-parent-5.1.pom
+Download https://jcenter.bintray.com/org/ow2/ow2/1.3/ow2-1.3.pom
+Download https://jcenter.bintray.com/com/beust/jcommander/1.55/jcommander-1.55.pom
+Download https://jcenter.bintray.com/com/github/rjeschke/txtmark/0.13/txtmark-0.13.pom
+Download https://jcenter.bintray.com/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.1/asm-5.1.jar
+Download https://jcenter.bintray.com/com/beust/jcommander/1.55/jcommander-1.55.jar
+Download https://jcenter.bintray.com/com/github/rjeschke/txtmark/0.13/txtmark-0.13.jar
+Download https://jcenter.bintray.com/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar
+C:\Program Files (x86)\Jenkins\workspace\TestBuild\src\main\java\gololang\error\Result.java:551: error: unmappable character for encoding Cp1252
+   * This makes `Result` an â€œapplicative functorâ€?.
+                                                    ^
+C:\Program Files (x86)\Jenkins\workspace\TestBuild\src\main\java\gololang\error\Result.java:649: error: unmappable character for encoding Cp1252
+   * second is the correct value (mnemonic: â€œrightâ€? also means â€œcorrectâ€?). For instance:
+                                                      ^
+C:\Program Files (x86)\Jenkins\workspace\TestBuild\src\main\java\gololang\error\Result.java:649: error: unmappable character for encoding Cp1252
+   * second is the correct value (mnemonic: â€œrightâ€? also means â€œcorrectâ€?). For instance:
+                                                                               ^
+:processResources
+:goloc
+:classes
+:golodoc
+:jar
+:goloshScripts
+:vanillaScripts
+:startScripts
+:distTar
+:distZip
+:assemble
+:findbugsMain
+Download https://jcenter.bintray.com/com/google/code/findbugs/findbugs/3.0.1/findbugs-3.0.1.pom
+Download https://jcenter.bintray.com/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.pom
+Download https://jcenter.bintray.com/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom
+Download https://jcenter.bintray.com/com/google/code/findbugs/bcel-findbugs/6.0/bcel-findbugs-6.0.pom
+Download https://jcenter.bintray.com/com/google/code/findbugs/jFormatString/2.0.1/jFormatString-2.0.1.pom
+Download https://jcenter.bintray.com/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-debug-all/5.0.2/asm-debug-all-5.0.2.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-parent/5.0.2/asm-parent-5.0.2.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-commons/5.0.2/asm-commons-5.0.2.pom
+Download https://jcenter.bintray.com/commons-lang/commons-lang/2.6/commons-lang-2.6.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/17/commons-parent-17.pom
+Download https://jcenter.bintray.com/org/apache/apache/7/apache-7.pom
+Download https://jcenter.bintray.com/com/apple/AppleJavaExtensions/1.4/AppleJavaExtensions-1.4.pom
+Download https://jcenter.bintray.com/jaxen/jaxen/1.1.6/jaxen-1.1.6.pom
+Download https://jcenter.bintray.com/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.2/asm-tree-5.0.2.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.2/asm-5.0.2.pom
+Download https://jcenter.bintray.com/com/google/code/findbugs/findbugs/3.0.1/findbugs-3.0.1.jar
+Download https://jcenter.bintray.com/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar
+Download https://jcenter.bintray.com/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+Download https://jcenter.bintray.com/com/google/code/findbugs/bcel-findbugs/6.0/bcel-findbugs-6.0.jar
+Download https://jcenter.bintray.com/com/google/code/findbugs/jFormatString/2.0.1/jFormatString-2.0.1.jar
+Download https://jcenter.bintray.com/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-debug-all/5.0.2/asm-debug-all-5.0.2.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-commons/5.0.2/asm-commons-5.0.2.jar
+Download https://jcenter.bintray.com/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+Download https://jcenter.bintray.com/com/apple/AppleJavaExtensions/1.4/AppleJavaExtensions-1.4.jar
+Download https://jcenter.bintray.com/jaxen/jaxen/1.1.6/jaxen-1.1.6.jar
+Download https://jcenter.bintray.com/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.2/asm-tree-5.0.2.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.2/asm-5.0.2.jar
+:compileTestJava
+Download https://jcenter.bintray.com/org/ow2/asm/asm-util/5.1/asm-util-5.1.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.1/asm-analysis-5.1.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.pom
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+Download https://jcenter.bintray.com/org/skyscreamer/jsonassert/1.3.0/jsonassert-1.3.0.pom
+Download https://jcenter.bintray.com/org/testng/testng/6.9.12/testng-6.9.12.pom
+Download https://jcenter.bintray.com/com/google/inject/guice/4.1.0/guice-4.1.0.pom
+Download https://jcenter.bintray.com/com/google/inject/guice-parent/4.1.0/guice-parent-4.1.0.pom
+Download https://jcenter.bintray.com/com/google/google/5/google-5.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.1/asm-tree-5.1.pom
+Download https://jcenter.bintray.com/org/json/json/20090211/json-20090211.pom
+Download https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom
+Download https://jcenter.bintray.com/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.pom
+Download https://jcenter.bintray.com/org/apache/ant/ant/1.7.0/ant-1.7.0.pom
+Download https://jcenter.bintray.com/org/apache/ant/ant-parent/1.7.0/ant-parent-1.7.0.pom
+Download https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.pom
+Download https://jcenter.bintray.com/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
+Download https://jcenter.bintray.com/com/google/guava/guava/19.0/guava-19.0.pom
+Download https://jcenter.bintray.com/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom
+Download https://jcenter.bintray.com/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-util/5.1/asm-util-5.1.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-analysis/5.1/asm-analysis-5.1.jar
+Download https://jcenter.bintray.com/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar
+Download https://jcenter.bintray.com/org/skyscreamer/jsonassert/1.3.0/jsonassert-1.3.0.jar
+Download https://jcenter.bintray.com/org/testng/testng/6.9.12/testng-6.9.12.jar
+Download https://jcenter.bintray.com/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.1/asm-tree-5.1.jar
+Download https://jcenter.bintray.com/org/json/json/20090211/json-20090211.jar
+Download https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+Download https://jcenter.bintray.com/org/apache/ant/ant/1.7.0/ant-1.7.0.jar
+Download https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.jar
+Download https://jcenter.bintray.com/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+Download https://jcenter.bintray.com/com/google/guava/guava/19.0/guava-19.0.jar
+Download https://jcenter.bintray.com/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar
+:processTestResources
+:testClasses
+:test
+Download https://jcenter.bintray.com/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812.pom
+Download https://jcenter.bintray.com/org/jacoco/org.jacoco.build/0.7.6.201602180812/org.jacoco.build-0.7.6.201602180812.pom
+Download https://jcenter.bintray.com/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812.jar
+:check
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 3 mins 35.075 secs
+Build step 'Invoke Gradle script' changed build result to SUCCESS
+Finished: SUCCESS
