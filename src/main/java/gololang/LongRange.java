@@ -39,7 +39,7 @@ final class LongRange extends AbstractRange<Long> {
       return 0;
     }
     final int theSize = (int) ((to() - from()) / increment());
-    if (theSize < 0) {
+    if (theSize <= 0) {
       return 0;
     }
     if (theSize == 0) {
