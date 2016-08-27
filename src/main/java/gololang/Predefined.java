@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2012-2016 Institut National des Sciences Appliquées de Lyon (INSA-Lyon)
  *
  * All rights reserved. This program and the accompanying materials
@@ -471,17 +471,6 @@ public final class Predefined {
    * @param encoding the file encoding as a {@link String} or {@link Charset}.
    * @return the content as a {@link String}.
    */
-  public static Object fileToText(Object file, Object encoding) throws Throwable {
-    Charset charset = null;
-    if (encoding instanceof String) {
-      charset = Charset.forName((String) encoding);
-    } else if (encoding instanceof Charset) {
-      charset = (Charset) encoding;
-    } else {
-      throw new IllegalArgumentException("encoding must be either a string or a charset instance");
-    }
-    return new String(Files.readAllBytes(pathFrom(file)), charset);
-  }
 
   private static Path pathFrom(Object file) {
     if (file instanceof String) {
