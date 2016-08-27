@@ -24,12 +24,12 @@ public final class DynamicVariable {
    *
    * @param init the initial value.
    */
-  public DynamicVariable(final Object inits) {
+  public DynamicVariable(final Object init) {
     super();
     threadLocal = new InheritableThreadLocal<Object>() {
       @Override
       protected Object initialValue() {
-        return inits;
+        return init;
       }
     };
   }
