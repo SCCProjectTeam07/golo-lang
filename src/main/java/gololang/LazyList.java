@@ -178,7 +178,7 @@ public class LazyList implements Collection<Object>, HeadTail<Object> {
    */
   @Override
   public boolean equals(Object o) {
-    if (O == this) return true;
+    if (o == this) return true;
     if (o == null) return false;
     if (!(o instanceof LazyList)) return false;
     LazyList other = (LazyList) o;
