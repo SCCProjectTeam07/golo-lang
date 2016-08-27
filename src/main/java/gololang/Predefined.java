@@ -471,8 +471,7 @@ public final class Predefined {
    * @param encoding the file encoding as a {@link String} or {@link Charset}.
    * @return the content as a {@link String}.
    */
-
-public static Object fileToText(Object file, Object encoding) throws Throwable {
+  public static Object fileToText(Object file, Object encoding) throws Throwable {
     Charset charset = null;
     if (encoding instanceof String) {
       charset = Charset.forName((String) encoding);
