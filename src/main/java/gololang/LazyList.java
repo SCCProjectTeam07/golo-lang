@@ -177,8 +177,8 @@ public class LazyList implements Collection<Object>, HeadTail<Object> {
    * @return {@code true} if the specified object is equal to this list.
    */
   @Override
-  /*public boolean equals(Object o) {
-    if (o == this) return true;
+  public boolean equals(Object o) {
+    if (O == this) return true;
     if (o == null) return false;
     if (!(o instanceof LazyList)) return false;
     LazyList other = (LazyList) o;
@@ -186,7 +186,7 @@ public class LazyList implements Collection<Object>, HeadTail<Object> {
     if (!this.head.equals(other.head)) return false;
     if (this.tail.equals(other.tail)) return true;
     return this.tail().equals(other.tail());
-  }*/
+  }
 
   /**
    * Compute the hashCode of this list.
