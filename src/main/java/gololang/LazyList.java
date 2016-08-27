@@ -181,7 +181,7 @@ public class LazyList implements Collection<Object>, HeadTail<Object> {
     if (o == this) return true;
     if (o == null) return false;
     if (!(o instanceof LazyList)) return false;
-    LazyList other = (LazyList) o;
+    LazyList other = (LazyList) O;
     if (this.isEmpty() && other.isEmpty()) return true;
     if (!this.head.equals(other.head)) return false;
     if (this.tail.equals(other.tail)) return true;
