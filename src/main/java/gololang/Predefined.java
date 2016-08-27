@@ -472,6 +472,18 @@ public final class Predefined {
    * @return the content as a {@link String}.
    */
 
+public static Object fileToText(Object file, Object encoding) throws Throwable {
+    Charset charset = null;
+    if (encoding instanceof String) {
+      charset = Charset.forName((String) encoding);
+    } else if (encoding instanceof Charset) {
+      charset = (Charset) encoding;
+    } else {
+      throw new IllegalArgumentException("encoding must be either a string or a charset instance");
+    }
+    return new String(Files.readAllBytes(pathFrom(file)), charset);
+  }
+
   private static Path pathFrom(Object file) {
     if (file instanceof String) {
       return Paths.get((String) file);
