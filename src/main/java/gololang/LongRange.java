@@ -57,7 +57,16 @@ final class LongRange extends AbstractRange<Long> {
     return encloses(obj) && (obj - from()) % increment() == 0;
   }
 
-  @Override
+ /* @Override
+  public Range<Long> tail() {
+    if (isEmpty()) {
+      return this;
+    }
+    return new LongRange(from() + increment(), to()).incrementBy(increment());
+  }
+*/
+
+@Override
   public Range<Long> tail() {
     if (isEmpty()) {
       return this;
